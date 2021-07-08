@@ -331,6 +331,85 @@ img {
 }
 
 
+/* PARTNERS */
+.partners {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background-color: var(--mirage-blue);
+}
+
+.partners::before {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 390px);
+  bottom: 100%;
+  transform: translateY(178px);
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #36536B;
+  opacity: 0.15;
+  content: '';
+}
+
+.partners__companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.partners__logo {
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+
+.google-logo, .nvidia-logo {
+  margin-bottom: 0;
+}
+
+.partners__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'DM Serif Display';
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: #FBFCFE;
+}
+
+.partners__desc {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #FBFCFE;
+  opacity: 0.7;
+}
+
+.partners__link-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners__link {
+  padding: 10px 32px;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  font-weight: bold;
+  color: #FBFCFE;
+}
+
 
 /* MEDIA 768px */
 @media only screen and (min-width: 768px) {
