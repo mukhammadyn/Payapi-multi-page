@@ -475,6 +475,67 @@ img {
 }
 
 
+/* MEDIA 800px */
+@media only screen and (min-width: 800px) {
+  .site-header::before {
+    left: calc(50% - -20px);
+    bottom: calc(100% - 608px);
+    width: 780px;
+    height: 780px;
+  }
+
+  .site-hero {
+    padding-bottom: 75px;
+  }
+
+  .site-hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .site-hero__img-wrap {
+    display: block;
+    margin: 0;
+    margin-top: 34px;
+    margin-right: 86px;
+  }
+  
+  .site-hero__img {
+    width: auto;
+    height: auto;
+  }  
+
+  .site-hero__content {
+    width: 546px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .site-hero__heading {
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .site-hero__form {
+    justify-content: start;
+  }
+
+  .site-hero__submit {
+    right: 40px;
+  }
+  
+  .site-hero__contact-link {
+    margin: 0;
+    padding-left: 27px;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+
 /* MEDIA 1000px */
 @media only screen and (min-width: 1000px) {
   .site-header::before {
@@ -483,6 +544,56 @@ img {
     width: 780px;
     height: 780px;
   }
+
+  .site-hero {
+    padding-bottom: 75px;
+  }
+
+  .site-hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .site-hero__img-wrap {
+    display: block;
+    margin: 0;
+    margin-top: 34px;
+    margin-right: 86px;
+  }
+  
+  .site-hero__img {
+    width: 263px;
+    height: 500px;
+  }  
+
+  .site-hero__content {
+    width: 546px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .site-hero__heading {
+    font-size: 72px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .site-hero__form {
+    justify-content: start;
+  }
+
+  .site-hero__email {
+    padding-right: 112px;
+  }
+  
+  .site-hero__contact-link {
+    margin: 0;
+    padding-left: 27px;
+    line-height: 18px;
+    text-align: left;
+  }
 }
 
 
@@ -490,9 +601,15 @@ img {
 /* MEDIA 1440px */
 @media only screen and (min-width: 1440px) {
   .site-header::before {
-    left: calc(50% - -20px);
+    left: calc(50% - -75px);
     bottom: calc(100% - 608px);
     width: 780px;
     height: 780px;
+  }
+}
+
+@media only screen and (max-width: 865px) and (min-width: 800px) {
+  .site-hero__submit {
+    right: 0; 
   }
 }
