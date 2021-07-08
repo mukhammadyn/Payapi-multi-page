@@ -417,6 +417,49 @@ img {
 }
 
 
+/* IMPLEMENT */
+.implement {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.implement__code {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.implement__img {
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+}
+
+.implement__content {
+  width: 329px;
+  margin: 0 auto;
+}
+
+.implement__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-size: 36px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: -0.369231px;
+  color: var(--san-juan-blue);
+}
+
+.implement__desc {
+  margin: 0;
+  text-align: center;
+  color: var(--light-san-juan-blue);
+}
+
+
+
+
+
+
 /* MEDIA 768px */
 @media only screen and (min-width: 768px) {
   /* SITE HEADER */
