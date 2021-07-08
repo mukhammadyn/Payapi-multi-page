@@ -903,6 +903,48 @@ img {
     align-items: flex-start;
   }
 
+
+
+  /* IMPLEMENT */
+  .implement {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .implement__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .implement__code {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 125px;
+  }
+
+  .implement__img {
+    width: 445px;
+    height: 284px;
+  }
+
+  .implement__content {
+    flex-grow: 1;
+    width: 445px;
+    margin: 0;
+    padding-right: 97px;
+  }
+
+  .implement__desc {
+    text-align: left;
+  }
+
+  .implement__title {
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
 }
 
 @media only screen and (max-width: 865px) and (min-width: 800px) {
