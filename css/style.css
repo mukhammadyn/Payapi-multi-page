@@ -785,6 +785,54 @@ img {
     width: 780px;
     height: 780px;
   }
+
+
+  /* PARTNERS */
+  .partners {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .partners__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .partners::before {
+    left: calc(50% - 935px);
+    top: 100%;
+    transform: translateY(-841px);
+  }
+
+  .partners__companies {
+    width: 536px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .partners__content {
+    width: 445px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .partners__heading {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  .partners__desc {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .partners__link-wrap {
+    align-items: flex-start;
+  }
+
 }
 
 @media only screen and (max-width: 865px) and (min-width: 800px) {
