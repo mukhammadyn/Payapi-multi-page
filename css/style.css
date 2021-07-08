@@ -343,7 +343,7 @@ img {
 
 .partners::before {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   left: calc(50% - 390px);
   bottom: 100%;
   transform: translateY(178px);
@@ -356,6 +356,9 @@ img {
 }
 
 .partners__companies {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -364,8 +367,11 @@ img {
   padding-right: 24px;
 }
 
-.partners__logo {
+.partners__companies-item:not(:nth-child(n+4)) {
   margin-bottom: 40px;
+}
+
+.partners__logo {
   object-fit: contain;
 }
 
@@ -551,6 +557,100 @@ img {
     text-decoration: none;
     color: var(--light-san-juan-blue);
   }
+
+
+  /* PARTNERS */
+  .partners {
+    padding-top: 95px;
+    padding-bottom: 88px;
+  }
+
+  .partners::before {
+    transform: translateY(240px);
+  }
+  
+  .partners__companies {
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 64px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .partners__companies-item {
+    flex-grow: 1;
+  }
+
+  .partners__companies-item:not(:nth-child(3n)) {
+    margin-right: 60px;
+  }
+  
+  .partners__logo {
+    display: block;
+  }
+
+  .tesla-logo {
+    width: 129px;
+    height: 17px;
+  }
+
+  .microsoft-logo {
+    width: 145px;
+    height: 31px;
+  }
+
+  .hp-logo {
+    width: 140px;
+    height: 27px;
+    margin-right: 0;
+  }
+
+  .oracle-logo {
+    width: 131px;
+    height: 17px;
+  }
+
+  .google-logo {
+    width: 96px;
+    height: 33px;
+  }
+
+  .nvidia-logo {
+    width: 137px;
+    height: 26px;
+  }
+
+  .partners__content {
+    width: 456px;
+    margin: 0 auto;
+  }
+  
+  .partners__heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  
+  .partners__desc {
+    margin-bottom: 32px;
+  }
+  
+  .partners__link-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .partners__link {
+    padding: 10px 32px;
+    border: 1px solid #FBFCFE;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    font-weight: bold;
+    color: #FBFCFE;
+  }
+
 }
 
 
