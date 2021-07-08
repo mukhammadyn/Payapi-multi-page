@@ -694,6 +694,33 @@ img {
     color: #FBFCFE;
   }
 
+
+
+/* IMPLEMENT */
+  .implement {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .implement__code {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .implement__img {
+    width: 392px;
+    height: 250px;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  }
+
+  .implement__content {
+    width: 573px;
+  }
+
+  .implement__title {
+    font-size: 45px;
+    line-height: 56px;
+  }
 }
 
 
