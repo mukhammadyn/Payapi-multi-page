@@ -367,6 +367,14 @@ img {
   padding-right: 24px;
 }
 
+.partners__companies-item {
+  width: 50%;
+}
+
+.partners__companies-item:nth-child(2n) {
+  text-align: right;
+}
+
 .partners__companies-item:not(:nth-child(n+4)) {
   margin-bottom: 40px;
 }
@@ -455,6 +463,99 @@ img {
   color: var(--light-san-juan-blue);
 }
 
+
+
+/* SIMPLE UI */
+.simple-ui {
+  padding-bottom: 80px;
+}
+
+.simple-ui__imgs {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+}
+
+.first-phone {
+  margin-right: 24px;
+}
+
+.simple-ui__content {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.simple-ui__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.276923px;
+  color: var(--san-juan-blue);
+}
+
+.simple-ui__text {
+  margin: 0;
+  color: #6C8294;;
+}
+
+.simple-ui__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.simple-ui__item {
+  text-align: center;
+}
+
+.simple-ui__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.simple-ui__item::before {
+  display: block;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: var(--mirage-blue);
+  margin: 0 auto;
+  margin-bottom: 33px;
+  background-position: center center;
+  content: '';
+}
+
+.finances::before {
+  background-image: url(../img/icon/finances.svg);
+}
+
+.coverage::before {
+  background-image: url(../img/icon/coverage.svg);
+}
+
+.payments::before {
+  background-image: url(../img/icon/payments.svg);
+}
+
+.simple-ui__item-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.138462px;
+  color: var(--san-juan-blue);
+}
+
+.simple-ui__item-desc {
+  margin: 0;
+  color: var(--light-san-juan-blue) 
+}
 
 
 
@@ -624,8 +725,8 @@ img {
     flex-grow: 1;
   }
 
-  .partners__companies-item:not(:nth-child(3n)) {
-    margin-right: 60px;
+  .partners__companies-item {
+    width: 33%;
   }
   
   .partners__logo {
@@ -843,6 +944,65 @@ img {
     line-height: 18px;
     text-align: left;
   }
+
+
+    /* PARTNERS */
+  .partners {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .partners__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .partners::before {
+    left: calc(50% - 935px);
+    top: 100%;
+    transform: translateY(-841px);
+  }
+
+  .partners__companies {
+    width: 536px;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .partners__companies-item {
+    width: calc(33% - 60px);
+    margin-right: 60px;
+  }
+
+  /* .partners__companies-item:nth-child(2n) {
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+  } */
+
+  .partners__content {
+    width: 445px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .partners__heading {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  .partners__desc {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .partners__link-wrap {
+    align-items: flex-start;
+  }
 }
 
 
@@ -907,8 +1067,8 @@ img {
 
   /* IMPLEMENT */
   .implement {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 150px;
+    padding-bottom: 10px;
   }
 
   .implement__container {
@@ -947,8 +1107,44 @@ img {
 
 }
 
-@media only screen and (max-width: 865px) and (min-width: 800px) {
+@media only screen and (max-width: 999px) and (min-width: 950px) {
+  .partners__companies-item {
+    width: 33%;
+  }
+}
+
+/* @media only screen and (max-width: 649px) and (min-width: 550px) {
+  .partners__companies {
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .partners__companies-item {
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 770px) and (min-width: 650px) {
+  .partners__companies {
+    justify-content: flex-start;
+  }
+
+  .partners__companies-item {
+    margin-right: 100px;
+    flex-grow: 1;
+  }
+} */
+
+/* @media only screen and (max-width: 865px) and (min-width: 800px) {
   .site-hero__submit {
     right: 0; 
   }
 }
+
+@media only screen and (max-width: 935px) and (min-width: 950px) {
+  .partners__companies-item {
+    margin-right: 55px;
+  }
+} */
