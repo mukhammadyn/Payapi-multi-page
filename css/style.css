@@ -822,6 +822,94 @@ img {
     font-size: 45px;
     line-height: 56px;
   }
+
+
+  /* SIMPLE UI */
+  .simple-ui {
+    padding-bottom: 100px;
+  }
+
+  .simple-ui__imgs {
+    justify-content: center;
+  }
+
+  .simple-ui__img {
+    width: 168px;
+    height: 320px;
+  }
+
+  .first-phone {
+    margin-right: 26px;
+  }
+
+  .simple-ui__content {
+    width: 573px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .simple-ui__heading {
+    font-style: 48px;
+    line-height: 56px;
+  }
+
+  .simple-ui__list {
+    display: flex;
+
+  }
+
+  .simple-ui__item {
+    width: calc(33% - 10px);
+    text-align: center;
+  }
+
+  .simple-ui__item:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 48px;
+  }
+
+  .simple-ui__item::before {
+    display: block;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--mirage-blue);
+    margin: 0 auto;
+    margin-bottom: 33px;
+    background-position: center center;
+    content: '';
+  }
+
+  .finances::before {
+    background-image: url(../img/icon/finances.svg);
+  }
+
+  .coverage::before {
+    background-image: url(../img/icon/coverage.svg);
+  }
+
+  .payments::before {
+    background-image: url(../img/icon/payments.svg);
+  }
+
+  .simple-ui__item-heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: var(--san-juan-blue);
+  }
+
+  .simple-ui__item-desc {
+    margin: 0;
+    color: var(--light-san-juan-blue) 
+  }
+
+
 }
 
 
